@@ -156,7 +156,7 @@ footer {
     }
 
     .product {
-        width: 100%; /* Single product per row */
+        width: 80%; /* Single product per row */
     }
 
     .hero {
