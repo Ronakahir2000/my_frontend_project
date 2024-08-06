@@ -20,11 +20,12 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
                     <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="team.html">Our Team</a></li>
-                    <li><a href="training.html">training</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="media.html">Media</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,6 +38,51 @@
     <section class="contact">
         <div class="container">
 
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+
+
+                <form action="submit_form.php" method="POST">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required autofocus><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required><br>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob"><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Inquiry Details</legend>
+                        <label for="inquiry">Type of Inquiry:</label>
+                        <select id="inquiry" name="inquiry">
+                            <option value="general">General</option>
+                            <option value="product">Product</option>
+                            <option value="support">Support</option>
+                        </select><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." rows="4"
+                            required></textarea><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label>Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe"> Subscribe to our
+                        newsletter<br>
+                        <label>Contact Method:</label>
+                        <input type="radio" id="contact_email" name="contact_method" value="email" checked>
+                        <label for="contact_email">Email</label>
+                        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label><br>
+                    </fieldset>
+
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </form>
+            </div>
+
             <h1>Are you looking for knives?</h1>
             <h4>Call us:<a href="tel:+1546975067">(814) 535-3208</a></h4>
             <a href="mailto:premiumknives@website.net">premiumknives@website.net</a>
@@ -45,6 +91,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.071619221574!2d-75.67871692440752!3d45.40789533719464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050f5059252f%3A0x22c3e2d535621f44!2sSaint%20Paul%20University!5e0!3m2!1sen!2sca!4v1719022443771!5m2!1sen!2sca"
                 width="600" height="450" class="map">
             </iframe>
+
 
         </div>
     </section>
